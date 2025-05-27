@@ -1,0 +1,124 @@
+@font-face {
+    font-family: 'Inter';
+    src: url('assets/fonts/static/Inter-Regular.ttf');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('assets/fonts/static/Inter-SemiBold.ttf');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('assets/fonts/static/Inter-Bold.ttf');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root {
+    --green: hsl(75, 94%, 57%);
+    --white: hsl(0, 0%, 100%);
+    --grey-700: hsl(0, 0%, 20%);
+    --grey-800: hsl(0, 0%, 12%);
+    --grey-900: hsl(0, 0%, 8%);
+    --font-size-paragraph: 14px;
+    --font-family: 'Inter', sans-serif;
+    --font-weight-regular: 400;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+}
+
+body {
+    background-color: var(--grey-900);
+    color: var(--white);
+    font-family: var(--font-family);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    background-color: var(--grey-800);
+    flex-direction: column;
+    align-items: center;
+    padding: 2.5rem;
+    min-width: 24rem;
+    max-width: 30rem;
+    border-radius: 1rem;
+}
+
+
+h1,
+p,
+button,
+img {
+    padding: 0;
+    margin: 0;
+}
+
+img {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    margin-bottom: 0.5rem;
+}
+
+h1 {
+    font-size: 1.5rem;
+    font-weight: var(--font-weight-semibold);
+    padding: 1rem;
+}
+
+#location {
+    font-size: var(--font-size-paragraph);
+    font-weight: var(--font-weight-bold);
+    color: var(--green);
+    padding-bottom: 1rem;
+}
+
+#bio {
+    font-size: var(--font-size-paragraph);
+    padding-bottom: 1.5rem;
+}
+
+.buttons {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1rem;
+}
+
+a {
+    padding: 1rem;
+    background-color: var(--grey-700);
+    color: var(--white);
+    font-size: var(--font-size-paragraph);
+    font-weight: var(--font-weight-semibold);
+    font-family: var(--font-family);
+    border-radius: 0.6rem;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+}
+
+
+.buttons a:hover,
+.buttons a:focus {
+    background-color: var(--green);
+    color: var(--grey-900);
+    cursor: pointer;
+}
